@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+    <title>Getting Started: Serving Web Content</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{/css/index.css}">
+</head>
+<body>
+	<div>
+	    <a href="/cart">Go to cart</a> <br>
+	    <a href="/login">Войти в аккаунт</a> <br>
+	    <a href="/newpage">Добавить элемент</a> <br>
+	    <a href="/orders">Просмотреть заказы</a> <br>
+	    <label th:text="${user.getFirstName()}"></label>
+	    
+	</div>
+</body>
+</html>

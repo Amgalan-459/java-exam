@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+    <title>Page: Serving Web Content</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{/css/page.css}">
+</head>
+<body>
+	<div class="w">
+	    <form action="#" th:action="@{/kupi}" th:object="${wallet}" method='POST' class="form">
+	        <input th:field="*{purpose}"> <br>
+	        <div>
+	        	<input th:field="*{quantity}"> <span> р/штука</span> 
+	        </div> <br>
+	        <input id="submitbtn" type='submit' value='Купить!'>
+	    </form>
+	    <a href="/">Go to home page</a>
+	</div>
+</body>
+</html>

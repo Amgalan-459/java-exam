@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Registration</title>
+	<link rel="stylesheet" th:href="@{/css/registration.css}">
+</head>
+<body>
+	<h1>Registration</h1>
+	<div>
+		<form action="#" th:action="@{/registration}" th:object="${user}" method='POST' class="form">
+	        <input th:field="*{firstName}" required placeholder="first name..."> <br>
+	        <input th:field="*{lastName}" required placeholder="last name..."> <br>
+	        <input th:field="*{password}" type="password" required placeholder="password..."> <br>
+	        <input th:field="*{matchingPassword}" type="password" required placeholder="match password..."> <br>
+	        <input th:field="*{email}" type="email" required placeholder="email..."> <br>
+	        <input id="submitbtn" type='submit' value='Зарегестрироваться!'>
+	    </form>
+	</div>
+</body>
+</html>
